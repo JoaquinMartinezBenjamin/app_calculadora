@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="361dp"
+        android:layout_height="648dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TableLayout
+            android:layout_width="271dp"
+            android:layout_height="134dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/suma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:onClick="sumar"
+                    android:text="+" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="93dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/resta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:onClick="restar"
+                    android:text="-" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/multiplicacion"
+                    android:layout_width="88dp"
+                    android:layout_height="36dp"
+                    android:onClick="multiplicar"
+                    android:text="*" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/division"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:onClick="dividir"
+                    android:text="/" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="253dp"
+            android:layout_height="47dp">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="El resultado es:" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="253dp"
+            android:layout_height="42dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:autoSizeTextType="uniform"
+            tools:text="0" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/manualusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="manualusuario"
+            android:text="Manual de usuario" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/principal" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
